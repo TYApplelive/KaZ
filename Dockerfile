@@ -19,5 +19,5 @@ RUN yarn add @vue/cli --dev
 # 暴露端口
 EXPOSE 8081
 
-# 启动开发服务器
-CMD ["yarn", "dev"]
+# 设置默认命令为交互式 Bash Shell
+CMD ["bash"]
