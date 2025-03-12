@@ -1,5 +1,9 @@
 <script setup lang="ts"></script>
 
-<template></template>
+<template>
+  <div class="App">
+    <h1>App Component</h1>
+  </div>
+</template>
 
-<style scoped></style>
+<style lang="less" scoped></style>
