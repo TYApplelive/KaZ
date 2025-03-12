@@ -28,7 +28,3 @@ coverage
 *.sw?
 
 *.tsbuildinfo
-
-
-# 文档
-TODO.md
