@@ -21,7 +21,7 @@ jobs:
       - name: Deploy to server
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "
-            cd /web/kaz &&
+            cd /web/KaZ &&
             git fetch origin main &&
             git reset --hard origin/main
           "
