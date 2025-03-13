@@ -26,6 +26,6 @@ jobs:
             corepack prepare yarn@4.7.0 --activate &&
             pkill -f 'yarn dev:web' || true &&
             yarn &&
-            nohup yarn dev:web > /web/KaZ/logs/yarn.log 2>&1 & disown &&
+            nohup yarn dev:web > /dev/tty 2>&1 & disown &&
             exit
           "
