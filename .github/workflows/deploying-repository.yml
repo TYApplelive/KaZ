@@ -20,7 +20,7 @@ jobs:
       # 3. 部署到服务器
       - name: Deploy to server
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "
+          ssh -o StrictHostKeyChecking=no root@${{ secrets.SSH_HOST }} "
             cd /web/KaZ &&
             git fetch origin main &&
             git reset --hard origin/main
