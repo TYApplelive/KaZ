@@ -3,6 +3,7 @@ name: CI/CD Pipeline to MyServer
 on:
   push:
     branches: [ "main" ]
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -10,20 +11,20 @@ jobs:
       # 检出代码
       - name: Checkout code
         uses: actions/checkout@v4
-        
+
       # 安装 sshpass 工具
       - name: Install sshpass
         run: sudo apt-get install -y sshpass
-        
+
       # 部署到服务器
       - name: Deploy to server
         run: |
-          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} '
             cd /web/KaZ &&
             git fetch origin main &&
             git reset --hard origin/main &&
             corepack enable &&
             corepack prepare yarn@4.7.0 --activate &&
-            pkill -f 'yarn dev:web' || true &&
-            yarn &&
-          "
+            pkill -f "yarn dev:web" || true &&
+            yarn
+          '
