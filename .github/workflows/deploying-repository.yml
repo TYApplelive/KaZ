@@ -24,6 +24,7 @@ jobs:
             git reset --hard origin/main &&
             corepack enable &&
             corepack prepare yarn@4.7.0 --activate &&
+            pkill -f 'yarn dev:web' || true &&
             yarn &&
             nohup yarn dev:web > /web/KaZ/logs/yarn.log 2>&1 & disown &&
             exit
