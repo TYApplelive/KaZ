@@ -4,7 +4,7 @@
 
 docker-compose.yml文件
 
-```json
+```yml
 # 用于构建项目Docker开发环境
 services:
   linux_redis:
@@ -35,7 +35,7 @@ services:
     volumes:
       - linux-data:/Kaz
     ports:
-      - "8001:8001"
+      - '8001:8001'
     command: >
       sh -c "
         sleep infinity
