@@ -2,7 +2,7 @@
 
 <template>
   <div class="App">
-    <h1>项目重启测试2333</h1>
+    <h1>Hello World</h1>
     <v-btn>Click Me</v-btn>
   </div>
 </template>
