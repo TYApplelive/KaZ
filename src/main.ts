@@ -1,4 +1,4 @@
-import 'normalize.css/normalize.css';
+import '@/assets/reset.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'

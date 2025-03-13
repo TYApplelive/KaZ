@@ -2532,6 +2532,7 @@ __metadata:
     npm-run-all2: "npm:^7.0.2"
     pinia: "npm:^3.0.1"
     prettier: "npm:3.5.3"
+    reset-css: "npm:^5.0.2"
     typescript: "npm:~5.8.0"
     vite: "npm:^6.2.1"
     vitest: "npm:^3.0.8"
@@ -3167,6 +3168,13 @@ __metadata:
     json-parse-even-better-errors: "npm:^4.0.0"
     npm-normalize-package-bin: "npm:^4.0.0"
   checksum: 10c0/8a03509ae8e852f1abc4b109c1be571dd90ac9ea65d55433b2fe287e409113441a9b00df698288fe48aa786c1a2550569d47b5ab01ed83ada073d691d5aff582
+  languageName: node
+  linkType: hard
+
+"reset-css@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "reset-css@npm:5.0.2"
+  checksum: 10c0/390ee3daaa8d42ea18fa572fc3e9dcb0589081599ae2220eeb488077be7d44c2677c29a4b0e776ceb867ae8421e0f8545c3868ce7124a59a31a1f145158dd7db
   languageName: node
   linkType: hard
 
