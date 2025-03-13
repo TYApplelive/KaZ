@@ -14,12 +14,7 @@ jobs:
       # 安装 sshpass 工具
       - name: Install sshpass
         run: sudo apt-get install -y sshpass
-
-      # 登录到服务器
-      - name: Login Server
-        run: |
-          sshpass -p "t212122112" ssh -o StrictHostKeyChecking=no root@${{ secrets.SSH_HOST }}
-          
+        
       # 部署到服务器
       - name: Deploy to server
         run: |
