@@ -22,6 +22,8 @@ jobs:
             cd /web/KaZ &&
             git fetch origin main &&
             git reset --hard origin/main &&
+            corepack enable &&
+            corepack prepare yarn@4.7.0 --activate &&
             yarn &&
             yarn dev:web
           "
