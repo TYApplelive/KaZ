@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
-    "test": "vitest --no-isolate",
+    "test": "vitest",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
@@ -21,7 +21,6 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@rollup/rollup-win32-x64-msvc": "^4.35.0",
     "@tsconfig/node22": "^22.0.0",
     "@types/jsdom": "^21.1.7",
     "@types/node": "^22.13.9",
