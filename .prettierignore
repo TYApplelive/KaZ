@@ -1,0 +1,23 @@
+# 忽略构建输出目录
+**/dist/
+**/build/
+
+# 忽略依赖目录
+node_modules
+
+# 忽略版本控制相关文件
+.git/
+.gitattributes
+.gitignore
+
+# 忽略 IDE 或编辑器相关文件
+.vscode
+
+# 忽略临时文件和备份文件
+*.log
+*.tmp
+*.bak
+
+# 忽略 Docker 相关文件
+.dockerignore
+/Dockerfile

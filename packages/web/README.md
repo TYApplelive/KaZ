@@ -1,4 +1,4 @@
-# Kaz
+# web
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -36,10 +36,4 @@ yarn build
 
 ```sh
 yarn test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-yarn lint
 ```
