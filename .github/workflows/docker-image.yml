@@ -1,0 +1,29 @@
+name: Docker Image CI - Build and Push
+
+on:
+   # 响应代码推送操作 
+  push:
+    branches: [ "main" ]
+    
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+        # 代码检出操作   
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+        # 使用action社区提供的docker登录接口
+    - name: Log in to Docker Hub
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKER_HUB_USERNAME }}
+        password: ${{ secrets.DOCKER_HUB_TOKEN }}
+
+        # 构建新的镜像
+    - name: Build the Docker image
+      run: docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/kaz:latest .
+
+        # 推送
+    - name: Push Docker image
+      run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/kaz:latest
