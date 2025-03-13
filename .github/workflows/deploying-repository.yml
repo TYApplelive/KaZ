@@ -7,20 +7,23 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      # 1. 检出代码
+      # 检出代码
       - name: Checkout code
         uses: actions/checkout@v4
         
-      # 2. 安装 SSH 私钥
-      - name: Install SSH key
-        uses: webfactory/ssh-agent@v0.7.0
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      # 安装 sshpass 工具
+      - name: Install sshpass
+        run: sudo apt-get install -y sshpass
 
-      # 3. 部署到服务器
+      # 登录到服务器
+      - name: Login Server
+        run: |
+          sshpass -p "t212122112" ssh -o StrictHostKeyChecking=no root@${{ secrets.SSH_HOST }}
+          
+      # 部署到服务器
       - name: Deploy to server
         run: |
-          ssh -o StrictHostKeyChecking=no root@${{ secrets.SSH_HOST }} "
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "
             cd /web/KaZ &&
             git fetch origin main &&
             git reset --hard origin/main
