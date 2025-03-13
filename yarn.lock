@@ -624,9 +624,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/rollup-win32-x64-msvc@npm:4.35.0":
+"@rollup/rollup-win32-x64-msvc@npm:4.35.0, @rollup/rollup-win32-x64-msvc@npm:^4.35.0":
   version: 4.35.0
   resolution: "@rollup/rollup-win32-x64-msvc@npm:4.35.0"
+  checksum: 10c0/c6d7a0cbfb489d60ea6f74a2c77c6ae8f9c9b4dae4106da59b640718c4fe7b2273d59ac07fd6d83ac95bcaf172ea908e2eb09c4bab3e0dfbc957e572ab055482
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -2515,6 +2516,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "kaz@workspace:."
   dependencies:
+    "@rollup/rollup-win32-x64-msvc": "npm:^4.35.0"
     "@tsconfig/node22": "npm:^22.0.0"
     "@types/jsdom": "npm:^21.1.7"
     "@types/node": "npm:^22.13.9"
