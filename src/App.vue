@@ -2,7 +2,7 @@
 
 <template>
   <div class="App">
-    <h1>App Component</h1>
+    <h1>HELLO WORLD</h1>
   </div>
 </template>
 

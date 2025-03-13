@@ -2528,6 +2528,7 @@ __metadata:
     eslint-plugin-vue: "npm:~10.0.0"
     jiti: "npm:^2.4.2"
     jsdom: "npm:^26.0.0"
+    normalize.css: "npm:^8.0.1"
     npm-run-all2: "npm:^7.0.2"
     pinia: "npm:^3.0.1"
     prettier: "npm:3.5.3"
@@ -2867,6 +2868,13 @@ __metadata:
   bin:
     nopt: bin/nopt.js
   checksum: 10c0/62e9ea70c7a3eb91d162d2c706b6606c041e4e7b547cbbb48f8b3695af457dd6479904d7ace600856bf923dd8d1ed0696f06195c8c20f02ac87c1da0e1d315ef
+  languageName: node
+  linkType: hard
+
+"normalize.css@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "normalize.css@npm:8.0.1"
+  checksum: 10c0/4ddf56d1af5ca755fa5e692e718316d8758ecb792aa96e1ad206824b5810a043763d681d6f7697d46573515f5e9690038b4c91a95c1997567128815545fb8cd7
   languageName: node
   linkType: hard
 
