@@ -1,5 +1,5 @@
 import express from 'express'
-import { add } from '@packages/utils'
+import { add } from '@public/utils'
 
 const app = express()
 

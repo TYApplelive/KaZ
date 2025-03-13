@@ -3,12 +3,13 @@
   "packageManager": "yarn@4.6.0",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "public/*"
   ],
   "scripts": {
     "build": "yarn workspaces run build",
-    "dev:web": "yarn workspace web dev",
-    "dev:server": "yarn workspace server dev",
+    "dev:web": "yarn workspace @packages/web dev:start",
+    "dev:server": "yarn workspace @packages/server dev:start",
     "format": "prettier --write \"**/*.{js,ts,jsx,tsx,json,css,scss,md}\""
   },
   "devDependencies": {

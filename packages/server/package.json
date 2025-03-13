@@ -4,11 +4,11 @@
   "private": true,
   "main": "src/index.ts",
   "scripts": {
-    "start": "nodemon src/index.ts",
+    "dev:start": "nodemon src/index.ts",
     "build": "tsc"
   },
   "dependencies": {
-    "@packages/utils": "workspace:*",
+    "@public/utils": "workspace:*",
     "express": "^4.21.2"
   },
   "devDependencies": {
