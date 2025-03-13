@@ -25,7 +25,13 @@ jobs:
             git reset --hard origin/main &&
             corepack enable &&
             corepack prepare yarn@4.7.0 --activate &&
-            pkill -f "yarn dev:web" || true &&
+          '
+          
+        # 开启服务
+      - name: Start Service
+        run: |
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} '
+            pm2 delete dev_web || true &&
             yarn && 
-            yarn dev:web
+            pm2 start yarn --name "dev_web" -- dev:web
           '
