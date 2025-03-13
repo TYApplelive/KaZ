@@ -1,5 +1,5 @@
 import express from 'express'
-import { add } from '@public/utils'
+import { add } from '@share/utils'
 
 const app = express()
 

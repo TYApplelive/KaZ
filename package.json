@@ -4,13 +4,14 @@
   "private": true,
   "workspaces": [
     "packages/*",
-    "public/*"
+    "share/*"
   ],
   "scripts": {
-    "build": "yarn workspaces run build",
+    "build": "yarn workspaces foreach --all run build",
     "dev:web": "yarn workspace @packages/web dev:start",
     "dev:server": "yarn workspace @packages/server dev:start",
-    "format": "prettier --write \"**/*.{js,ts,jsx,tsx,json,css,scss,md}\""
+    "format": "prettier --write \"**/*.{js,ts,jsx,tsx,json,css,scss,md}\"",
+    "link": "yarn link -A"
   },
   "devDependencies": {
     "prettier": "^3.5.3"
