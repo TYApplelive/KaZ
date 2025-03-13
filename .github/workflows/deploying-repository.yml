@@ -31,11 +31,8 @@ jobs:
       - name: Start Service
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} '
-            # 关闭并删除 PM2 中的 dev_web 程序
             pm2 delete dev_web || true
-            # 安装依赖
             yarn
-            # 使用 PM2 启动项目
             pm2 start yarn --name "dev_web" -- dev:web
           '
         if: always()
