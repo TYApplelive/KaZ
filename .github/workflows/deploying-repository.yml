@@ -26,5 +26,6 @@ jobs:
             corepack enable &&
             corepack prepare yarn@4.7.0 --activate &&
             pkill -f "yarn dev:web" || true &&
-            yarn
+            yarn && 
+            yarn dev:web
           '
