@@ -2,7 +2,7 @@
 
 <template>
   <div class="App">
-    <h1>HELLO WORLD</h1>
+    <h1>CI/CD功能测试</h1>
     <v-btn>Click Me</v-btn>
   </div>
 </template>
