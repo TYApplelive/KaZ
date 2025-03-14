@@ -3,8 +3,8 @@
 </script>
 
 <template>
-    <div class="chatroom-menu">
-
+    <div class="chatroom-friends">
+        <h1>菜单栏</h1>
     </div>
 </template>
 
