@@ -3478,6 +3478,7 @@ __metadata:
   dependencies:
     "@types/less": "npm:^3.0.8"
     less: "npm:^4.2.2"
+    less-loader: "npm:^12.2.0"
     pm2: "npm:^5.4.3"
     prettier: "npm:^3.5.3"
   languageName: unknown
@@ -3494,6 +3495,22 @@ __metadata:
   version: 1.0.11
   resolution: "lazy@npm:1.0.11"
   checksum: 10c0/9adcf3fc0071e89da712177a29988b830ac05ac857690d7616f319a970704b38269f67cfedb07e22fe5f0b544b37ab62721df828fd085bc052404dde7fbbec75
+  languageName: node
+  linkType: hard
+
+"less-loader@npm:^12.2.0":
+  version: 12.2.0
+  resolution: "less-loader@npm:12.2.0"
+  peerDependencies:
+    "@rspack/core": 0.x || 1.x
+    less: ^3.5.0 || ^4.0.0
+    webpack: ^5.0.0
+  peerDependenciesMeta:
+    "@rspack/core":
+      optional: true
+    webpack:
+      optional: true
+  checksum: 10c0/54eea545727930801d2ccc0b586332cd07d0f922b14ab7c8b3f03199944d770ac363081081ed2fda5f23da904336367cb2bb40007c033970dce25f7f9c906ba2
   languageName: node
   linkType: hard
 

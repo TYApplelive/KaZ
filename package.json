@@ -16,6 +16,7 @@
   "devDependencies": {
     "@types/less": "^3.0.8",
     "less": "^4.2.2",
+    "less-loader": "^12.2.0",
     "prettier": "^3.5.3"
   },
   "dependencies": {

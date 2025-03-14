@@ -2,9 +2,13 @@
 
 <template>
   <div class="App">
-    <h1>项目重启测试2333</h1>
-    <v-btn>Click Me</v-btn>
+    <RouterView />
   </div>
 </template>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+.App {
+  height: 100vh;
+  width: 100vw;
+}
+</style>
