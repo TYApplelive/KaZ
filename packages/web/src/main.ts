@@ -1,8 +1,6 @@
 import '@/assets/reset.css' // 重置样式
-// 通用字体
-import 'vfonts/Lato.css'
-// 等宽字体
-import 'vfonts/FiraCode.css'
+import 'vfonts/Lato.css' // 通用字体
+import 'vfonts/FiraCode.css' // 等宽字体
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
